@@ -51,8 +51,6 @@ let app = new Vue({
 
       if(this.coinData[symbol]) {
         let imagePath = this.coinData[symbol].ImageUrl;
-        console.log(CRYPTOCOMPARE_API_URI + imagePath);
-        console.log(imagePath);
         return CRYPTOCOMPARE_API_URI + imagePath;
       }
     },
